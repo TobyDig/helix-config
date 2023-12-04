@@ -1,0 +1,44 @@
+# theme = "amberwood"
+# theme = "autumn"
+# theme = "boo_berry"
+# theme = "catppuccin_macchiato"
+# theme = "catppuccin_mocha"
+# theme = "default"
+# theme = "ferra"
+# theme = "fleet_dark"
+# theme = "gruvbox_dark_hard"
+theme = "hex_lavender"
+# theme = "kanagawa"
+# theme = "kaolin-dark"
+# theme = "meliora"
+# theme = "nord-night"
+# theme = "penumbra+"
+# theme = "rasmus"
+# theme = "rose_pine_moon"
+# theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+scrolloff = 7
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "position", "file-encoding", "file-line-ending"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[keys.normal]
+A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+A-h = ["delete_selection", "move_char_left", "paste_before"]
+A-l = ["delete_selection", "move_char_right", "paste_after"]
+C-j = ["goto_window_center", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "scroll_down", "goto_window_center"]
+C-k = ["goto_window_center", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "scroll_up", "goto_window_center"]
+C-d = ["goto_window_center", "half_page_down", "goto_window_center"]
+C-u = ["goto_window_center", "half_page_up", "goto_window_center"]
+C-f = ["goto_window_center", "page_down", "goto_window_center"]
+C-b = ["goto_window_center", "page_up", "goto_window_center"]
+
