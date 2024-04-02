@@ -1,0 +1,16 @@
+[[language]]
+name = "openscad"
+scope = "source.scad"
+file-types = ["scad"]
+comment-token = "//"
+indent = {tab-width = 1, unit = "    "}
+language-servers = ["openscad-lsp"]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'<' = '>'
+
+
